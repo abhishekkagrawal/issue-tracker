@@ -1,0 +1,38 @@
+/*
+    Name : Dinesh Saini
+    Date : 23/12/2013
+    Purpose : CSS file for search result JSP page
+*/
+
+
+#CategoryContent{
+    font-size: 13px;
+}
+
+#contentWrapper  a{
+    text-decoration: none;
+    color: #116699;
+}
+
+#contentWrapper a:hover{
+    text-decoration: underline;
+    color: #116699;
+}
+
+.description{
+    font-style: italic;
+    color: #7a7878;
+}
+.projectView,.issueView{
+    margin: 13px;
+}
+
+#searchFrom table{
+    margin:0px 0px 10px 55px;
+}
+
+
+#issuesIndex{
+    font-size: 13px;
+}
+

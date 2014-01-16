@@ -1,0 +1,85 @@
+/*
+    Name : Dinesh Saini
+    Date : 16/12/13
+    Purpose : CSS file for add issue pages
+*/
+
+#contentWrapper{
+    margin: 20px 20px 20px 20px;
+
+}
+#contentWrapper a{
+  text-decoration: none;
+  color:#116699;
+}
+#contentWrapper a:hover {text-decoration: underline;}
+
+#addIssueForm{
+    background-color: #F6F6F6;    
+    padding: 20px 0px 20px 150px;
+    border: 1px #E4E4E4 solid;
+}
+
+#projIdentifier{
+    color:#507AAA;
+    text-decoration: underline;
+}
+
+#issueIndex{
+    background-color: #F6F6F6;
+    font-family: Verdana,sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    border: 1px #E4E4E4 solid;
+}
+
+#issueIndex tr:hover{background: #ffffcc;}
+
+#issueIndex a{
+    text-decoration: none;
+    color: #507AAA;
+    
+}
+
+#issueIndex a:hover{
+    text-decoration: underline;
+}
+
+.odd{
+    background-color: #e4e4f3;
+}
+
+.pagebanner{
+    display: none;
+}
+.pagelinks{
+   color:#507AAA;   
+   margin-left: 0px;
+}
+
+.exportlinks
+{
+margin-left: 00px;
+margin-top: 10px;
+}
+.export{ 
+margin-left: 0px;
+}
+
+#models_filter{   
+    margin: 0 0px 10px auto;
+}
+/*Issue Overview JSP CSS*/
+#overviewBody{
+   border: 1px #E4E4E4 solid;
+    background-color: #FFFFDD;
+    padding: 1px 15px 15px 15px;
+    width : 70%;
+}
+#overviewBody p{font-size: 12px;}
+
+#overviewBody hr{color: #e4e4f3;}
+
+
+table.attributes th{width: 29%;text-align: left;}
+table.attributes td{width: 30%;text-align: left;}

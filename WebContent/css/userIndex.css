@@ -1,0 +1,49 @@
+/*
+    Name : Dinesh Saini
+    Date : 03/12/2013
+    Purpose : CSS class for UserIndex Page
+*/
+
+#indexWrapper{
+    margin: 0px 20px 20px 20px;
+}
+
+#userIndexTable{
+    text-align: center;
+}
+
+#userIndexTable table{
+    border: 1px #E4E4E4 solid;
+    text-align: left;
+    border-collapse: collapse;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#userIndexTable td,th{
+    border: 1px #E4E4E4 solid;
+}
+
+#searchEmployee{
+    padding: 10px 25px 10px 25px;
+    border: 1px #E4E4E4 solid;
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagebanner{
+    display: none;
+}
+.pagelinks{
+    color: #116699;
+}
+#editUserForm{
+    border: 1px #E4E4E4 solid;
+    width: 450px;
+    background-color: #F6F6F6;
+    padding:30px;
+}

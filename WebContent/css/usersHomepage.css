@@ -1,0 +1,81 @@
+/* Name : Dinesh Saini
+   Date : 30/12/2013
+   Purpose : CSS file for developer homepage
+*/
+
+#bodyContent{
+    margin:10px;
+}
+#bodyContent  a{
+    text-decoration: none;
+    color: #116699;
+    
+}
+
+#bodyContent a:hover{
+    text-decoration: underline;
+    color: #116699;
+}
+
+#issuesIndex{
+    font-size: 13px;
+    width: 49%;
+    margin-right: 10px;
+    float: left;
+}
+#issueReportedIndex{
+    font-size: 13px;
+    width: 49%;
+    float: right;
+    margin-left: 10px;
+}
+#issuesIndex h3{
+    border: 0px #E4E4E4 solid;
+    padding: 10px;
+    font-weight: bold;
+}
+.even{
+    background-color: #F6F6F6;
+}
+#issuesIndex th{
+    background-color: #F6F6F6;
+}
+#issuesIndex td a{
+    color: #116699;
+}
+#issuesIndex td a{
+    text-decoration: none;
+    color: #116699;
+}
+#issuesIndex td a:hover{
+    text-decoration: underline;
+    color: #116699;
+}
+.pagebanner{
+    display: none;
+}
+.pagelinks{
+    color: #116699;
+}
+
+
+#issueReportedIndex h3{
+    border: 0px #E4E4E4 solid;
+    padding: 10px;  
+    font-weight: bold;
+}
+#issueReportedIndex th{
+    background-color: #F6F6F6;
+}
+#issueReportedIndex td a{
+    color: #116699;
+}
+#issueReportedIndex td a{
+    text-decoration: none;
+    color: #116699;
+}
+#issueReportedIndex td a:hover{
+    text-decoration: underline;
+    color: #116699;
+
+}

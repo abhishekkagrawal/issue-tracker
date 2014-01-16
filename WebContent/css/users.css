@@ -1,0 +1,13 @@
+/* 
+    Name : Dinesh Saini
+    Date : 09/12/13
+    Purpose : CSS file for User's HomePage
+*/
+
+#bodyContent{
+    margin: 20px 20px 20px 20px;
+}
+body{
+    font-size: 15px; margin:0px 0px 0px 0px; color: #484848;
+}
+#UserInfo{float: right; margin-right: 10px;}

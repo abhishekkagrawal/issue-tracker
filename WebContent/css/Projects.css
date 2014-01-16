@@ -1,0 +1,171 @@
+/*
+    Name : Dinesh Saini
+    Date : 29/11/2013
+    Purpose : CSS file for Projects Page
+*/
+
+
+body a{text-decoration: none;
+       color: #116699;}
+body a:hover{text-decoration: underline;
+}
+
+#bodyContent{
+    margin: 20px 20px 20px 20px;
+}
+
+#closedProject ,#currentProject{
+    border:0px #E4E4E4 solid;
+    font-weight: bold;           
+    font-size: 15px;
+    font-style: normal;    
+    width: 500px;
+    padding-top: 1px;
+    background-color: #F6F6F6;   
+    margin: 20px 20px 40px 20px;
+
+}
+
+#closedProjWrapper{float:right;margin-right: 30px;}
+
+#currentProjWrapper{float:left;margin-left: 30px;}
+
+.projectIndex{
+    list-style-type: none;
+}
+
+.projectIndex a{
+    text-decoration: none;
+    color: #116699;
+    font-size: 18px;
+}
+
+.projectIndex a:hover{
+    text-decoration: underline;
+    color: #116699;
+}
+
+.desc{
+    font-style: normal;font-weight: lighter; margin-left: 26px;font-style: italic;
+    color: #7a7878;
+}
+.iDate{font-style: normal;margin-left: 26px;font-size: 12px;font-weight: normal;}
+
+.blank{margin: 10px 10px 10px 10px;}
+
+#projIdentifier{
+    color:#507AAA;
+    text-decoration: underline;
+}
+#projDescription{
+    width:650px;
+}
+#projectMember{
+    float: right;
+    background-color: #F6F6F6;
+    border: 1px #E4E4E4 solid;
+    position: relative;
+    right: 20px;
+    top:-60px;
+    padding: 5px;
+    width: 550px;
+}
+
+#projectIssues{    
+    margin-top: 35px;
+    background-color: #F6F6F6;
+    border: 1px #E4E4E4 solid;
+    padding: 6px;
+    width: 550px;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+#projectIssues h4, #projectMember h4{
+    margin: 3px 3px 10px 3px;
+}
+
+#assignedMemberTable{
+    border: 0px #E4E4E4 solid;
+    //width: 850px;
+}
+
+#assignedMemberTable table{
+    width: 850px;
+    border: 1px #E4E4E4 solid;
+    border-collapse: collapse;
+}
+#assignedMemberTable th, td{
+    border: 0px #484848 solid;
+    vertical-align: top;
+    
+}
+
+#assigneeMember{
+    width: 400px;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 165px;
+}
+
+#fieldset{
+    height: 450px;
+    border: 1px #E4E4E4 solid;
+}
+#roleTypeForm{
+    width: 375px;
+    position: absolute; 
+    bottom: 15px;
+}
+
+.pagelinks{
+    color: #116699;
+}
+.pagebanner{
+    display: none;
+} 
+#newDocumentContent{
+    background-color: #F6F6F6;
+    width: 800px;
+    margin-bottom: 20px;
+    padding: 1px 10px 15px 15px;
+}
+
+#showDocument{
+    background-color: #F6F6F6;
+    width: 800px;
+    margin-bottom: 20px;
+    
+    padding: 1px 5px 15px 15px;
+}
+
+#showDocument a{
+    text-decoration: none;
+    color: #116699;;
+}
+#showDocument a:hover {
+    text-decoration: underline;
+    color: #116699;
+}
+
+#updateRoles{
+    width: 500px;    
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 170px; 
+}
+#closeProject{
+    width: 120px;
+    float: right;
+    position: absolute;
+    top: 120px;
+    right: 5px;  
+    font-weight: bold;
+    font-size: 13px;
+}
+#projectSettingUpdateForm{
+    border: 1px #E4E4E4 solid;
+    background-color: #F6F6F6;
+    padding: 25px 10px 15px 80px;
+}

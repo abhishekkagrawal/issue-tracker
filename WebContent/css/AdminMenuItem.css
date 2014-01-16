@@ -1,0 +1,48 @@
+/* 
+    Name : Dinesh Saini
+    Date : 29/11/2013
+    Purpose : CSS file for menu items
+*/
+
+//for styling field error
+.errorMessage {  
+color: blue;  
+/*font-size: 1em; */
+/*position: relative;
+left: 250px;
+top: 8px;*/
+} 
+
+#main-menu{
+    font-size: 12px;
+    white-space:nowrap;    
+    padding: 4px;
+    background-color:#507AAA;
+}
+#main-menu a{
+    text-decoration: none;
+    padding: 4px 10px 4px 10px;
+    background: #507AAA;
+    font-weight: bold;
+    color:white;
+}
+#main-menu a:hover {background:#759FCF;}
+#main-menu a.selected {background: #fff; color:#555; }
+
+body{
+    font-family: verdana,serif;
+    font-size: 15px; 
+    margin:0px 0px 0px 0px; 
+    color: #484848;
+}
+
+#ErrorBox{
+    margin: 20px 20px 20px 20px;
+    border: 2px red solid;
+    color: red;
+    font-weight: bold;
+}
+
+#contentWrapper{
+    margin: 20px 20px 20px 20px;
+}

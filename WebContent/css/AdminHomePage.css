@@ -1,0 +1,44 @@
+/*  Name : Dinesh Saini
+    Created on : 26/11/2013
+    Purpose : CSS file for homepage   
+*/
+*{font-family: verdana,serif;}
+
+body{font-size: 15px; margin:0px 0px 0px 0px; color: #484848;}
+
+#shortcutAdmin{
+    margin: 40px 0px 20px 0px;
+    font-size: 20px;
+}
+
+#shortcutAdmin li{
+    margin: 20px;
+    color: #116699;
+}
+
+#wrapper a{
+    text-decoration: none;
+    color: #116699;
+}
+#wrapper a:hover{
+    text-decoration: underline;
+}
+
+#UserInfo{float: right; margin-right: 10px;}
+
+#contentWrapper{
+    margin: 20px 20px 20px 20px;
+}
+#contentWrapper a{
+    color: #116699;
+}
+
+#userIndexTable a{text-decoration: none;
+                  color: #116699;}
+#userIndexTable a:hover{text-decoration: underline;
+}
+
+#editUserForm{
+    margin: 20px 20px 20px 20px ;
+}
+

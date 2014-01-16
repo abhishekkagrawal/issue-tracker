@@ -1,0 +1,22 @@
+/* 
+    Name : Dinesh Saini
+    Date : 02/12/2013
+    Purpose : CSS file for update user JSP page
+*/
+
+#myAccount{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#updateInfoForm{    
+           border: 1px #E4E4E4 solid;
+           font-weight: bold;
+           padding-left: 55px;
+           padding-top: 30px;
+           font-size: 15px;
+           font-style: normal;
+           height: 250px;
+           width: 450px;
+           background-color: #F6F6F6;           
+}

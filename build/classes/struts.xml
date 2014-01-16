@@ -1,0 +1,202 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <constant name="struts.custom.i18n.resources" value="com.webaccess.issuetracker.property.Resources"/>
+
+    <package name="default" extends="struts-default">
+
+        <action name="LoginPage" >
+            <result>/jsp/Login.jsp</result>
+        </action>
+
+        <action name="LoginAction" class="com.webaccess.issuetracker.action.LoginAction">
+            <result name="input">/jsp/Login.jsp</result>
+            <result name="success" type="chain">directorAction</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="directorAction">
+            <result>/jsp/director.jsp</result>
+        </action>
+
+        <action name="adminDirectorAction" method="adminRedirect" class="com.webaccess.issuetracker.action.DirectorAction">
+            <result name="success">/jsp/AdminHomePage.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="developerDirectorAction" method="developerRedirect" class="com.webaccess.issuetracker.action.DirectorAction">
+            <result name="success">/jsp/developerHomePage.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="testerDirectorAction" method="testerRedirect" class="com.webaccess.issuetracker.action.DirectorAction">
+            <result name="success">/jsp/testerHomePage.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="managerDirectorAction" method="managerRedirect" class="com.webaccess.issuetracker.action.DirectorAction">
+            <result name="success">/jsp/projectManagerHomePage.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="LogoutAction" class="com.webaccess.issuetracker.action.LogOutAction">
+            <result name="success">/jsp/Login.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="searchAction"  class="com.webaccess.issuetracker.action.SearchAction">
+            <result name="success">/jsp/search.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="userIndexAction" method="getSearchUserInfo" class="com.webaccess.issuetracker.action.UserIndexInfoAction">
+            <result name="success">/jsp/userIndex.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="userSearchIndexAction" method="getSearchUserInfo" class="com.webaccess.issuetracker.action.UserIndexInfoAction">
+            <result name="success">/jsp/userIndex.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="showEditUserAction" method="showEditUser" class="com.webaccess.issuetracker.action.UserIndexInfoAction">
+            <result name="success">/jsp/editUser.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="editUserDetailsAction" method="editUserDetails" class="com.webaccess.issuetracker.action.UserIndexInfoAction">
+            <result name="success" type="chain">userIndexAction</result>
+            <result name="error">/jsp/editUser.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="userRegAction" class="com.webaccess.issuetracker.action.UserRegFormAction">
+            <result name="success">/jsp/userRegistrationPage.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="addEmployeeAction"  class="com.webaccess.issuetracker.action.AddUserAction" method="addUser">
+            <result name="input">/jsp/userRegistrationPage.jsp</result>
+            <result name="success">/jsp/userRegistrationPage.jsp</result>
+            <result name="error">/jsp/userRegistrationPage.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="projectsAction" class="com.webaccess.issuetracker.action.GetProjectDataAction">
+            <result name="success">/jsp/ProjectsIndex.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="userDetailsAction" class="com.webaccess.issuetracker.action.UserInfoAction">
+            <result name="success">/jsp/userDetails.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="usersDetailAction" method="getUserInfo" class="com.webaccess.issuetracker.action.UserInfoAction">
+            <result name="success">/jsp/userDetails.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="addProjectFormAction" class="com.webaccess.issuetracker.action.AddProjectAction">
+            <result name="success">/jsp/addNewProjectPage.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="addProjectAction" class="com.webaccess.issuetracker.action.AddProjectAction" method="addProject">
+            <result name="input">/jsp/addNewProjectPage.jsp</result>
+            <result name="success">/jsp/addNewProjectPage.jsp</result>
+            <result name="error">/jsp/addNewProjectPage.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="updateUserAction" method="getFormData" class="com.webaccess.issuetracker.action.UpdateUserInfoAction" >
+            <result name="success">/jsp/updateUserInfo.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="updateUserDetails" method="updateUserInfo" class="com.webaccess.issuetracker.action.UpdateUserInfoAction" >
+            <result name="input">/jsp/updateUserInfo.jsp</result>
+            <result name="success">/jsp/updateUserInfo.jsp</result>
+            <result name="error">/jsp/updateUserInfo.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="projectMainAction" method="getProjectOverviewData" class="com.webaccess.issuetracker.action.ProjectMainAction">
+            <result name="success">/jsp/project/ProjectMain.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+            <result name="unAuthorized">/page-not-found.jsp</result>
+        </action>
+
+        <action name="projectOverviewAction" method="getOverviewData" class="com.webaccess.issuetracker.action.ProjectMainAction">
+            <result name="success">/jsp/project/ProjectMain.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="assignMemberAction" method="assignMember" class="com.webaccess.issuetracker.action.ProjectMainAction">
+            <result name="success">/jsp/project/assignMember.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="newAssignMemberAction" method="newAssignMember" class="com.webaccess.issuetracker.action.ProjectMainAction">
+            <result name="input">/jsp/project/assignMember.jsp</result>
+            <result name="success">/jsp/project/assignMember.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="projectSettingAction" method="getProjectSettings" class="com.webaccess.issuetracker.action.ProjectMainAction">
+            <result name="success">/jsp/project/projectSetting.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="updateProjectSettingsAction" method="updateProjectSettings" class="com.webaccess.issuetracker.action.ProjectMainAction">
+            <result name="success">/jsp/project/projectSetting.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+            <result name="unAuthorizedPage">/page-not-found.jsp</result>
+        </action>
+
+        <action name="closeProjectAction" method="closeProject" class="com.webaccess.issuetracker.action.ProjectMainAction">
+            <result name="success">/jsp/project/ProjectMain.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="projectActivityAction" method="projectActivity" class="com.webaccess.issuetracker.action.ProjectMainAction">
+            <result name="success">/jsp/project/activity.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+
+        <action name="*IssueAction" method="{1}" class="com.webaccess.issuetracker.action.IssueAction">
+            <interceptor-ref name="fileUpload">
+                <param name="maximumSize">102400</param>
+                <param name="allowedTypes">
+                    image/PNG,image/png,image/gif,image/jpeg,image/pjpeg,image/jpg,image/GIF,text/plain
+                </param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/jsp/project/addNewIssue.jsp</result>
+            <result name="input">/jsp/project/addNewIssue.jsp</result>
+            <result name="index">/jsp/project/issuesIndex.jsp</result>
+            <result name="overview">/jsp/project/issueOverview.jsp</result>
+            <result name="projectIndex" type="chain">projectsAction</result>
+            <result name="404Error">/jsp/Error404.jsp</result>
+            <result name="login">/jsp/Login.jsp</result>
+            <result name="unAuthorized">/page-not-found.jsp</result>
+        </action>
+
+        <action name="*Action" method="{1}" class="com.webaccess.issuetracker.action.ProjectMainAction">
+            <interceptor-ref name="fileUpload">
+                <param name="maximumSize">102400</param>
+                <param name="allowedTypes">
+                    image/PNG,image/png,image/gif,image/jpeg,image/pjpeg,image/jpg,image/GIF,text/plain
+                </param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="input">/jsp/project/Documents.jsp</result>
+            <result name="success">/jsp/project/Documents.jsp</result>
+            <result name="update" type="chain">assignMemberAction</result>
+            <result name="login">/jsp/Login.jsp</result>
+        </action>
+    </package>
+</struts>

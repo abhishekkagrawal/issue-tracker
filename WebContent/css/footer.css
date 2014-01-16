@@ -1,0 +1,20 @@
+/* 
+    Name : Dinesh Saini
+    Date : 29/12/2013
+    Purpose : CSS filee for footer
+*/
+
+#footerContent hr{
+    color: #E4E4E4;
+    font-weight: normal;
+    
+}
+#footerContent{
+    color: #AAAAAA;
+    text-align: center;
+    border-top: 1px solid #BBBBBB;
+    padding: 5px;
+    position: absolute;
+    bottom: 0px;
+    //background: none repeat scroll 0 0 #FFFFFF;
+}

@@ -1,0 +1,29 @@
+/*  Name : Dinesh Saini    
+    Date : 27/12/2013
+    Purpose : To style New User registration page
+*/
+
+body{
+    font-family: verdana,serif; margin-top: 0px; color: #484848;
+}
+
+.userRegFormBody{
+    margin: 0px 20px 20px 20px;
+}
+
+#userRegForm{
+           border:1px #E4E4E4 solid;
+           font-weight: bold;           
+           padding: 30px 0px 30px 150px;
+           font-size: 15px;
+           font-style: normal;            
+           background-color: #F6F6F6;
+}
+
+#errorField{
+    border: 2px #ff0000 solid;   
+}
+#errorField li{
+    color: #ff0000;    
+}
+

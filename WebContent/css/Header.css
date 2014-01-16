@@ -1,0 +1,25 @@
+/* Name : Dinesh Saini
+   Created on : Nov 26, 2013, 10:26:54 AM
+   Purpose : CSS file for header 
+*/
+body{
+    font-family: verdana,serif; margin:0px 0px 0px 0px; color: #484848;
+}
+
+#topMenuBar {
+    vertical-align: middle; padding-top: 3px; padding-right: 6px; padding-left: 6px; font-size: 70%; height: 1.8em; background-color: #3E5B76; color: #f8f8f8;
+}
+#topMenuBar a { 
+    margin-right: 5px; font-weight: bold;  vertical-align: middle; text-decoration: none; color: #f8f8f8;
+}
+#topMenuBar a:hover {
+    text-decoration: underline;
+}
+
+#leadMenu{float: left;}
+#MyAccount{float: right;vertical-align: middle;}
+#topText{vertical-align: middle}
+
+#header {display: block; height:4em;background-color:#507AAA;color:#f8f8f8; padding: 4px 8px 0px 6px; position:relative;}
+#search{position: relative;margin-top: -47px;margin-right: 6px;float: right;display:inline;}
+
